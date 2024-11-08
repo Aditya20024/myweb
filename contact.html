@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<title>Layout 2</title>
+</head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="layout2.css" rel="stylesheet" type="text/css">
+
+<style>
+header,nav,main,footer,section,article,aside
+{
+box-sizing:border-box;
+border:1px solid black; 
+padding:10px;
+margin:3px;
+}
+
+
+header{
+width:100%;
+height:100px;
+display:none;
+}
+nav{
+width:70%;
+margin:auto;
+}
+
+img{max-width:100%;
+max-height:100%;
+}
+
+#bannerpic{width:100%;}
+
+
+#main{
+width:100%;
+display:flex;
+flex-direction:column;
+
+}
+section{width:100%; height:200px;}
+article{width:100%; height:200px;}
+aside{width:100%; height:200px;}
+
+
+footer{
+width:100%; height:200px;color:white;background:gray;
+display:flex;
+justify-content: space-between;
+flex-direction:column;
+
+}
+
+#sitemap{width:100%;height:70px;background:red;margin-bottom:2px;}
+#socialmedia{width:100%;height:70px;background:green;}
+
+
+
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+ {
+ body{background:yellow}
+
+ 
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+ {
+body{background:lime}
+header{display:block;height:100px;}
+header{height:200px;}
+nav ol li{display:inline;}
+footer{flex-direction:row;height:100px;}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+body{background:orange}
+
+header{width:80%;
+margin:auto;
+height:200px;
+display:block;
+}
+header{height:400px;}
+
+
+#main{
+flex-direction:row;
+}
+
+footer{
+height:200px;
+}
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+body{background:cyan}
+header{width:100%;
+height:400px;}
+
+
+} 
+
+
+</style>
+
+<body>
+<header>
+<img id="bannerpic"  src="images/p4.jpg">
+
+</header>
+<nav>Menu
+<ol>
+<li> <a href="index2.html">Home</a></li>
+<li> <a href="about.html">About us</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li> <a href="#">Product</a></li>
+<li> <a href="photogallery2.html">Photo Gallery</a></li>
+
+
+
+</ol>
+
+
+
+ </nav>
+
+<div id="main">
+  <section>Section 1 contact </section>
+  <article>Article </article>
+  <aside>Add Word </aside>
+ </div>
+
+
+
+<footer>
+	<div id="sitemap">Site Map</div>
+        <div id="socialmedia">Social Media</div>
+</footer>
+
+
+
+</body>
+
+</html>
